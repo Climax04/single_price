@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: hsl(204, 43%, 93%);
+}
+.parent{
+    max-width: 50%;
+    margin: 100px auto;
+    background-color: #fff;
+}
+.price{
+    height: 50%;
+    margin-left: 30px;
+    line-height: 1.5;
+    padding: 30px 0;
+}
+.price h2{
+    color: hsl(179, 62%, 43%);
+ }
+.price h3{
+   color: hsl(71, 73%, 54%);
+   margin-top: 20px;
+   margin-bottom: 15px;
+}
+.price p{
+    color: grey;
+    font-weight: 400;
+}
+.wrapper{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(
+        to right,
+        hsl(179, 65%, 38%) 0%,
+        hsl(179, 65%, 38%) 48%,
+        hsl(179, 62%, 43%)48%,
+        hsl(179, 62%, 43%) 100%
+      );
+    color: hsl(204, 43%, 93%);
+    padding: 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container h3{
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+button{
+    display:block;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 87px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:hsl(204, 43%, 93%); ;
+    color:hsl(71, 73%, 54%); ;
+}
+span{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #fff;
+}
+.amount{
+    color:hsl(204, 43%, 93%);
+}
+.item2{
+    margin-left: 10px;
+}
+.item2 p{
+    font-size: 15px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ /* Tablet View*/
+
+ @media screen and (max-width:950px){
+    .parent{
+        max-width: 75%;
+    
+    }
+ }
+
+ /* Mobile View*/
+ 
+ @media screen and (max-width:690px) {
+    body
+    .parent{
+        max-width: 75%;
+    }
+    .price{
+        margin-right: 20px;
+    }
+    .price h2{
+        max-width: 300px;
+     }
+     .price p{
+        display: inline;
+     }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        background: linear-gradient(
+        to bottom,
+        hsl(179, 65%, 38%) 0%,
+        hsl(179, 65%, 38%) 48%,
+        hsl(179, 62%, 43%)48%,
+        hsl(179, 62%, 43%) 100%
+      ); 
+        padding-top: 20px;     
+    }
+    .wrapper h3{
+        margin: 15px 0 20px 0;
+    }
+    button{
+        margin-bottom: 50px;
+        display: block
+    }
+    .item2{
+      margin-left:0 ;
+    }
+    
+ }
